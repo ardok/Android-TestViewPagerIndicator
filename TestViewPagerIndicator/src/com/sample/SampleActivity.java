@@ -24,6 +24,9 @@ public class SampleActivity extends BaseSampleActivity implements ViewPager.OnPa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
+        // Set the context for our second fragment so that we can use it to hide the soft keyboard
+        ((FragmentSecond) CONTENT[1]).setInputMethodManager(getApplicationContext());
+        
         // Initialize the adapter with our fragments
         mCircleAdapter = new FragmentAdapter(getSupportFragmentManager(), CONTENT);
         

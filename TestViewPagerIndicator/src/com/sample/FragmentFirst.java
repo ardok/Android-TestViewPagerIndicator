@@ -67,7 +67,6 @@ public class FragmentFirst extends Fragment {
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
         if (savedInstanceState != null) {
         	if (savedInstanceState.containsKey(KEY_STRING_TEXT_ENTERED)) {
         		textEntered = savedInstanceState.getString(KEY_STRING_TEXT_ENTERED);
