@@ -5,9 +5,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 class FragmentAdapter extends FragmentPagerAdapter {
-	private Fragment[] CONTENT;
+	protected static Fragment[] CONTENT;
 	
-	private int mCount;
+	protected int mCount;
 
     public FragmentAdapter(FragmentManager fm, Fragment[] frags) {
         super(fm);

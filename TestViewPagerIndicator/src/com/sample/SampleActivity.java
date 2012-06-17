@@ -25,21 +25,21 @@ public class SampleActivity extends BaseSampleActivity implements ViewPager.OnPa
         setContentView(R.layout.main);
         
         // Initialize the adapter with our fragments
-        mAdapter = new FragmentAdapter(getSupportFragmentManager(), CONTENT);
+        mCircleAdapter = new FragmentAdapter(getSupportFragmentManager(), CONTENT);
         
         // Initialize our ViewPager
         mPager = (ViewPager) this.findViewById(R.id.pager);
-        mPager.setAdapter(mAdapter);
+        mPager.setAdapter(mCircleAdapter);
         mPager.setOnPageChangeListener(this);
         
         // Initialize the simple CirclePageIndicator by Jake Wharton
-        mIndicator = (CirclePageIndicator) this.findViewById(R.id.indicator);
-        mIndicator.setViewPager(mPager);
-        mIndicator.setOnPageChangeListener(this);
+        mCircleIndicator = (CirclePageIndicator) this.findViewById(R.id.circleIndicator);
+        mCircleIndicator.setViewPager(mPager);
+        mCircleIndicator.setOnPageChangeListener(this);
         
         // Since mIndicator is a PageIndicator, we need to store our indicator as a View, i.e.
         // CirclePageIndicator, so that we can add the cool animation :)
-        cpi = (CirclePageIndicator) this.findViewById(R.id.indicator);
+        cpi = (CirclePageIndicator) this.findViewById(R.id.circleIndicator);
        	
         // Initialize the fadeIn animation
         fadeIn = new AlphaAnimation(0, 1);

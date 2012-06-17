@@ -43,6 +43,7 @@ public class FragmentFirst extends Fragment {
 	 */
 	public void sendText(String text) {
 		this.textEntered = text;
+		message.setMessage(text);
 		setFromStringTextView(text);
 		setFromParcelableTextView(text);
 	}

@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 import com.viewpagerindicator.PageIndicator;
 
 public abstract class BaseSampleActivity extends FragmentActivity {
-    FragmentAdapter mAdapter;
+    FragmentAdapter mCircleAdapter;
     ViewPager mPager;
-    PageIndicator mIndicator;
+    PageIndicator mCircleIndicator;
 }
