@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/firstRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TextView
+        android:id="@+id/fromString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from_string"></TextView>
+    
+    <TextView
+        android:id="@+id/fromStringTextView"
+        android:layout_toRightOf="@+id/fromString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello">
+    </TextView>
+    
+    <TextView
+        android:id="@+id/fromParcelable"
+        android:layout_below="@+id/fromString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from_parcelable"></TextView>
+    
+    <TextView
+        android:id="@+id/fromParcelableTextView"
+        android:layout_below="@+id/fromStringTextView"
+        android:layout_toRightOf="@+id/fromParcelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello">
+    </TextView>
+    
+</RelativeLayout>

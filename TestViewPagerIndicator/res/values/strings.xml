@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SampleActivity!</string>
+    <string name="app_name">TestViewPagerIndicator</string>
+	<string name="hint">Type Anything&#8230;</string>
+	<string name="click_me">Click Me!</string>
+    <string name="button_description">Click the button below to show a toast and make the first page shows your text!</string>
+    <string name="from_string">From String: </string>
+    <string name="from_parcelable">From Parcelable: </string>
+    <string name="go_to_first_page">Go to First Page</string>
+    
+</resources>
