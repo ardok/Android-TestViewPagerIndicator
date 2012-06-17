@@ -11,4 +11,5 @@ In this simple Android project, I added some fade in and fade out animations on 
 I also show an example to put Parcelable into a Bundle so that I can save a fragment's state.
 
 Clarification about FragmentPagerAdapter vs PagerAdapter : http://stackoverflow.com/questions/8425961/diference-fragmentpageradapter-and-pageradapter
+
 I'm using FragmentPagerAdapter in this simple project even though I don't have any code that is going to be reused.
